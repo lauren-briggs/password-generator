@@ -126,6 +126,7 @@ button[disabled] {
   border: 1px solid cornflowerblue;
   border-radius: 6px;
   resize: none;
+  text-overflow: wrap;
   overflow: hidden;
 }
 
