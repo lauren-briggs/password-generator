@@ -80,17 +80,6 @@ function generatePassword() {
   return passwordCharacters.join('')
 }
 
-//function to get character codes
-function arrayFromLowToHigh(low, high) {
-  const array = [];
-  for (let i = low; i <= high; i++) {
-    array.push(i);
-  }
-  return array;
-}
-//calling function
-arrayFromLowToHigh();
-
 //linking to form and submit button on html DOM
 const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
