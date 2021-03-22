@@ -13,7 +13,9 @@ body,
 }
 
 body {
-  font-family: monospace;
+  font-family: obviously, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: black;
 }
 
@@ -40,6 +42,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
 }
 
 .card-header::after {

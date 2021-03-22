@@ -1,14 +1,92 @@
-# password-generator
-Week 03 homework assignment - using Javascript to generate a password
+# 03 JavaScript: Password Generator
 
-For this weeks assignment I tried a few different ways to create the password generator - I had some issues with the alert boxes so I ended up creating a form 
-![screenshot.](assets/img/ScreenShot2021-03-15_01.png) and linking the javascript to the form in index.html instead.
+## Your Task
 
+This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-After creating the form in the [html doc](index.html), I linked the html ids and classes to the javascript doc by creating [variables](Assets/img/ScreenShot2021-03-15_02.png) - the video that I was referencing used constants instead of regular variables which I had to look up [here](https://www.w3schools.com/js/js_const.asp)
+The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
-I then created [arrays](Assets/img/ScreenShot2021-03-15_03.png) for each different type of character (uppercase, lowercase, number and special) using their [character codes](https://www.petefreitag.com/cheatsheets/ascii-codes/)
+## User Story
 
-The character length input text box and the slider are not inherently linked so I then connected them using js, and then linked the input value and checkboxes with const (const characterAmount = characterLengthNumber.value / const includeLowercase = includeLowercaseElement.checked)
+```
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+```
 
-The generatePassword function takes these constants and returns a string in a new constant passwordCharacters using a loop, math.Floor and math.Random 
+## Acceptance Criteria
+
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN prompted for character types to include in the password
+THEN I choose lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
+
+## Mock-Up
+
+The following image shows the web application's appearance and functionality:
+
+![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+
+## Grading Requirements
+
+This homework is graded based on the following criteria: 
+
+### Technical Acceptance Criteria: 40%
+
+* Satisfies all of the preceding acceptance criteria plus the following:
+
+  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+
+### Deployment: 32%
+
+* Application deployed at live URL.
+
+* Application loads with no errors.
+
+* Application GitHub URL submitted.
+
+* GitHub repository that contains application code.
+
+### Application Quality: 15%
+
+* Application user experience is intuitive and easy to navigate.
+
+* Application user interface style is clean and polished.
+
+* Application resembles the mock-up functionality provided in the homework instructions.
+
+### Repository Quality: 13%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains quality readme file with description, screenshot, and link to deployed application.
+
+## Review
+
+You are required to submit the following for review:
+
+* The URL of the deployed application.
+
+* The URL of the GitHub repository, with a unique name and a readme describing the project.
+
+- - -
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
