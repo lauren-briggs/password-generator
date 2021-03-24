@@ -92,20 +92,6 @@ form.addEventListener('submit', e => {
   passwordDisplay.innerText = passwordCharacters.join('');
 })
 
-function arrayFromLowToHigh(low, high) {
-  const array = []
-  for (let i = low; i <= high; i++) {
-    array.push(i)
-  }
-  return array
-}
-
-function syncCharacterLength(e) {
-  const value = e.target.value
-  characterLengthNumber.value = value
-  characterLengthRange.value = value
-}
-
 includePrompts();
 
 console.log("your password is: " + passwordCharacters)
